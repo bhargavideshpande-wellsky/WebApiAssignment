@@ -45,6 +45,7 @@
     <Compile Include="Activity.cs" />
     <Compile Include="Air.cs" />
     <Compile Include="Car.cs" />
+    <Compile Include="Default.cs" />
     <Compile Include="Hotel.cs" />
     <Compile Include="Iproduct.cs" />
     <Compile Include="IproductFactory.cs" />

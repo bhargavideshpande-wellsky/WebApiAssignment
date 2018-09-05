@@ -16,7 +16,7 @@ namespace BookingProducts
                 case "activity": return new Activity();
                 case "hotel": return new Hotel();
                 case "air": return new Air();
-                default: return new Air();
+                default: return new Default();
             }
                 
         }
