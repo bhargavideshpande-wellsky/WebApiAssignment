@@ -8,12 +8,13 @@ namespace Shopping
 {
     class CartFunctions: IcartFunctions
     {
-        public void showCart(Cart cartDB)
+        public void showCart()
         {
+            Console.WriteLine(cartDB);
             // display cartDB
         }
         
-        public void buyNow(Cart cartDB)
+        public void buyNow(CartItems cartDB)
         {
             // make the payment of total items present in the cart
         }
