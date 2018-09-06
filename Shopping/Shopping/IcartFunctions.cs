@@ -8,6 +8,9 @@ namespace Shopping
 {
     interface IcartFunctions
     {
-        void buyNow(Cart cartDB);
+       
+        void showCart();
+        void buyNow(CartItems cartDB);
+
     }
 }
