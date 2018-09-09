@@ -1,0 +1,11 @@
+c:\users\bdeshpande\source\repos\ProductBookingAPI\ProductDataAccess\bin\Debug\ProductDataAccess.dll.config
+c:\users\bdeshpande\source\repos\ProductBookingAPI\ProductDataAccess\bin\Debug\ProductDataAccess.dll
+c:\users\bdeshpande\source\repos\ProductBookingAPI\ProductDataAccess\bin\Debug\ProductDataAccess.pdb
+c:\users\bdeshpande\source\repos\ProductBookingAPI\ProductDataAccess\bin\Debug\EntityFramework.dll
+c:\users\bdeshpande\source\repos\ProductBookingAPI\ProductDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\bdeshpande\source\repos\ProductBookingAPI\ProductDataAccess\bin\Debug\EntityFramework.xml
+c:\users\bdeshpande\source\repos\ProductBookingAPI\ProductDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\bdeshpande\source\repos\ProductBookingAPI\ProductDataAccess\obj\Debug\ProductDataAccess.csprojResolveAssemblyReference.cache
+c:\users\bdeshpande\source\repos\ProductBookingAPI\ProductDataAccess\obj\Debug\ProductDataAccess.csproj.CoreCompileInputs.cache
+c:\users\bdeshpande\source\repos\ProductBookingAPI\ProductDataAccess\obj\Debug\ProductDataAccess.dll
+c:\users\bdeshpande\source\repos\ProductBookingAPI\ProductDataAccess\obj\Debug\ProductDataAccess.pdb
