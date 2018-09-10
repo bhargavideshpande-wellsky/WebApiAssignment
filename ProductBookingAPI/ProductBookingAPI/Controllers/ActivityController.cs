@@ -1,4 +1,5 @@
-﻿using ProductBookingAPI.Models;
+﻿using ProductBookingAPI.Fare;
+using ProductBookingAPI.Models;
 using ProductDataAccess;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,13 @@ namespace ProductBookingAPI.Controllers
         {
             using (BookProductAPIEntities entities = new BookProductAPIEntities())
             {
-                return entities.Activities.ToList();
+                IEnumerable<Activity> activities = entities.Activities.ToList();
+                IFare fare = new ActivityFare();
+                foreach (Activity activity in activities)
+                {
+                    activity.ProductPrice = fare.GetActualFare(Convert.ToInt32(activity.ProductPrice));
+                }
+                return activities;
             }
         }
         public void PostActivity([FromBody]Activity activity)

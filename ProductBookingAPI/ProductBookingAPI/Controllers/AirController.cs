@@ -1,4 +1,5 @@
-﻿using ProductBookingAPI.Models;
+﻿using ProductBookingAPI.Fare;
+using ProductBookingAPI.Models;
 using ProductDataAccess;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,13 @@ namespace ProductBookingAPI.Controllers
         {
             using (BookProductAPIEntities entities = new BookProductAPIEntities())
             {
-                return entities.Airs.ToList();
+                IEnumerable<Air> airs = entities.Airs.ToList();
+                IFare fare = new AirFare();
+                foreach (Air air in airs)
+                {
+                    air.ProductPrice = fare.GetActualFare(Convert.ToInt32(air.ProductPrice));
+                }
+                return airs;
             }
         }
         public void PostAir([FromBody]Air air)

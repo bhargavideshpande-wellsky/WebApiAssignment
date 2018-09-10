@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type ="text/css" href="./CSS/BookingProductCSS.css"></link>
+    <script src ="./JavaScript/BookingProductJS.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="main-section-tags">
+			     <div class="ProductLinks" onclick="Product(event,'flight')">Flights</div>
+			     <div class="ProductLinks" onclick="Product(event,'hotel')">Hotels</div>
+			     <div class="ProductLinks" onclick="Product(event,'car')">Cars</div>
+			     <div class="ProductLinks" onclick="Product(event,'activity')">Activities</div>
+		   </nav>
+    </header>
+    <section id ="flight" class="product-content">
+      <div>
+        <form id ="Air">
+            Flight name:<br>
+            <input type="text" name="ProductName" value="">
+            <br><br>
+            Flight Price:<br>
+            <input type="text" name="ProductPrice" value="">
+            <br><br>
+            IsBooked:<br>
+            <input type="text" name="IsBooked" value="false">
+            <br><br>
+            IsSaved:<br>
+            <input type="text" name="IsSaved" value="false">
+            <br><br>
+            Flight Fare:<br>
+            <input type="text" name="ProductFare" value="">
+        </form>
+        <br><br>
+        <input type="submit"  value="Submit" onclick="AddData('Air')">
+      </div>
+    </section>
+
+    <section id="hotel"  class="product-content">
+      <div>
+        <form id ="Hotel">
+            Hotel name:<br>
+            <input type="text" name="ProductName" value="">
+            <br><br>
+            Hotel Price:<br>
+            <input type="text" name="ProductPrice" value="">
+            <br><br>
+            IsBooked:<br>
+            <input type="text" name="IsBooked" value="false">
+            <br><br>
+            IsSaved:<br>
+            <input type="text" name="IsSaved" value="false">
+            <br><br>
+            Hotel Fare:<br>
+            <input type="text" name="ProductFare" value="">
+        </form>
+        <br><br>
+        <input type="submit"  value="Submit"  onclick="AddData('Hotel')">
+      </div>
+    </section>
+
+    <section id="car"  class="product-content">
+      <div>
+        <form id ="Car">
+            Car name:<br>
+            <input type="text" name="ProductName" value="">
+            <br><br>
+            Car Price:<br>
+            <input type="text" name="ProductPrice" value="">
+            <br><br>
+            IsBooked:<br>
+            <input type="text" name="IsBooked" value="false">
+            <br><br>
+            IsSaved:<br>
+            <input type="text" name="IsSaved" value="false">
+            <br><br>
+            Car Fare:<br>
+            <input type="text" name="ProductFare" value="">
+        </form>
+        <br><br>
+        <input type="submit"  value="Submit" onclick="AddData('Car')">
+      </div>
+    </section>
+
+    <section id="activity"  class="product-content">
+      <div>
+        <form id ="Activity">
+            Activity name:<br>
+            <input type="text" name="ProductName" value="">
+            <br><br>
+            Activity Price:<br>
+            <input type="number" name="ProductPrice" value="">
+            <br><br>
+            IsBooked:<br>
+            <input type="text" name="IsBooked" value="false">
+            <br><br>
+            IsSaved:<br>
+            <input type="text" name="IsSaved" value="false">
+            <br><br>
+            Activity Fare:<br>
+            <input type="number" name="ProductFare" value="">
+        </form>
+        <br><br>
+        <input type="submit"  value="Submit" onclick="AddData('Activity')">
+      </div>
+    </section>
+  </body>
+</html>
