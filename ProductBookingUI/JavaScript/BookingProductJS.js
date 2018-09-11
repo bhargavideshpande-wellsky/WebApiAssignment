@@ -27,7 +27,6 @@ function Product(evt, productName)
 
 function ProductList(evt, productName)
 {
-
   var productlistcontent, i, ProductLinks;;
   productlistcontent = document.getElementsByClassName("product-list-content");
   for (i = 0; i < productlistcontent.length; i++) {
@@ -46,6 +45,7 @@ function ProductList(evt, productName)
     if (this.readyState == 4 && this.status == 200)
     {
         document.getElementById(productName).style.display = "block";
+        const s = productName;
         var myObj = JSON.parse(this.responseText);
         var productDetails = "";
         myObj.forEach(product =>{
@@ -54,9 +54,9 @@ function ProductList(evt, productName)
                       "<div><h3>" + product.ProductName + "</h3></div>" +
                       "<div>"+"Book At: $"+product.ProductPrice +"</div>" +
                       "<div>" +"Fare: " +product.ProductFare + "/-"+"</div>" +"<br>"+
-                      "<button class = 'product-list-action'>BOOK</button>" + "<button class = 'product-list-action'>SAVE</button>" +
+                      "<button class = 'product-list-action' onclick='book("+product.Id+",\""+productName+"\")'>BOOK</button>" +
+                      "<button class = 'product-list-action'onclick='save("+product.Id+",\""+productName+"\")'>SAVE</button>" +
                   "</div>"+"<br>"
-
         });
         document.getElementById(productName).innerHTML = productDetails;
     }
@@ -79,11 +79,34 @@ function AddData(product)
     xmlhttp.open("POST", "http://localhost:59188/api/"+product, true);
     xmlhttp.setRequestHeader("Content-Type", "application/json; charset=utf-8");
     xmlhttp.send(object);
-
 }
 
-function toggle(id)
+function book(id,product)
 {
-    console.log(id);
+    var xmlhttp = new XMLHttpRequest();
+    var object =
+    {
+      "id" : id,
+      "action":"book"
+    }
+    object = JSON.stringify(object);
 
+    xmlhttp.open("PUT", "http://localhost:59188/api/"+product, true);
+    xmlhttp.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    xmlhttp.send(object);
+}
+
+function save(id,product)
+{
+  var xmlhttp = new XMLHttpRequest();
+  var object =
+  {
+    "id" : id,
+    "action":"save"
+  }
+  object = JSON.stringify(object);
+
+  xmlhttp.open("PUT", "http://localhost:59188/api/"+product, true);
+  xmlhttp.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+  xmlhttp.send(object);
 }
