@@ -1,0 +1,86 @@
+body{
+  margin: 0 auto;
+  padding: 0px;
+}
+header h1{
+  text-align: center;
+}
+
+button{
+  width: 50%;
+  height: 50px;
+}
+
+.login-section{
+  width: 30%;
+  margin: 15% auto;
+  text-align: center;
+}
+
+#admin{
+  margin-bottom: 5%;
+}
+
+#user{
+  margin-top: 5%;
+}
+.main-section-tags {
+  display: flex;
+}
+
+.main-section-tags div {
+  padding: 15px;
+  color: #347AAD;
+
+}
+
+.main-section-tags div:hover {
+  background-color:  #347AAD;
+  color: white;
+}
+
+.main-section-tags div.active{
+  background-color:  #347AAD;
+  color: white;
+}
+.product-content{
+  display: none;
+  padding: 5%;
+}
+.product-content div{
+
+  margin-left: 38%;
+  margin-right: 38%;
+  padding: 10px;
+}
+.product-list-content{
+  display: none;
+  padding: 3%;
+  background-color: #347AAD;;
+}
+.product{
+  display: block;
+  padding: 30px;
+  background-color: white;
+}
+.product-list-action{
+  width: 11%;
+  height: auto;
+  margin-right: 1%;
+}
+.book-color{
+  background-color: #cb3904;
+  border: solid 1px #b93404;
+}
+.save-color{
+  background-color: #1e52a4;
+  border: solid 1px #1e52a4;
+}
+.not-available-color{
+  background-color: #ffcd03;
+  border: solid 1px #ffcd03;
+}
+.saved-color{
+  background-color: #7ed321;
+  border: solid 1px #7ed321;
+}

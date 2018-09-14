@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BookProductAPIModelStoreContainer" CdmEntityContainer="BookProductAPIEntities">
+    <EntitySetMapping Name="Activities">
+      <EntityTypeMapping TypeName="BookProductAPIModel.Activity">
+        <MappingFragment StoreEntitySet="Activity">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+          <ScalarProperty Name="IsBooked" ColumnName="IsBooked" />
+          <ScalarProperty Name="IsSaved" ColumnName="IsSaved" />
+          <ScalarProperty Name="ProductFare" ColumnName="ProductFare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Airs">
+      <EntityTypeMapping TypeName="BookProductAPIModel.Air">
+        <MappingFragment StoreEntitySet="Air">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+          <ScalarProperty Name="IsBooked" ColumnName="IsBooked" />
+          <ScalarProperty Name="IsSaved" ColumnName="IsSaved" />
+          <ScalarProperty Name="ProductFare" ColumnName="ProductFare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cars">
+      <EntityTypeMapping TypeName="BookProductAPIModel.Car">
+        <MappingFragment StoreEntitySet="Car">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+          <ScalarProperty Name="IsBooked" ColumnName="IsBooked" />
+          <ScalarProperty Name="IsSaved" ColumnName="IsSaved" />
+          <ScalarProperty Name="ProductFare" ColumnName="ProductFare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hotels">
+      <EntityTypeMapping TypeName="BookProductAPIModel.Hotel">
+        <MappingFragment StoreEntitySet="Hotel">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+          <ScalarProperty Name="IsSaved" ColumnName="IsSaved" />
+          <ScalarProperty Name="IsBooked" ColumnName="IsBooked" />
+          <ScalarProperty Name="ProductFare" ColumnName="ProductFare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
