@@ -1,0 +1,14 @@
+C:\Users\bdeshpande\source\repos\BookingProducts\BookingProducts\bin\Debug\BookingProducts.exe.config
+C:\Users\bdeshpande\source\repos\BookingProducts\BookingProducts\bin\Debug\BookingProducts.exe
+C:\Users\bdeshpande\source\repos\BookingProducts\BookingProducts\bin\Debug\BookingProducts.pdb
+C:\Users\bdeshpande\source\repos\BookingProducts\BookingProducts\obj\Debug\BookingProducts.csprojResolveAssemblyReference.cache
+C:\Users\bdeshpande\source\repos\BookingProducts\BookingProducts\obj\Debug\BookingProducts.csproj.CoreCompileInputs.cache
+C:\Users\bdeshpande\source\repos\BookingProducts\BookingProducts\obj\Debug\BookingProducts.exe
+C:\Users\bdeshpande\source\repos\BookingProducts\BookingProducts\obj\Debug\BookingProducts.pdb
+C:\Users\bdeshpande\WebApiAssignment\BookingProducts\BookingProducts\bin\Debug\BookingProducts.exe.config
+C:\Users\bdeshpande\WebApiAssignment\BookingProducts\BookingProducts\bin\Debug\BookingProducts.exe
+C:\Users\bdeshpande\WebApiAssignment\BookingProducts\BookingProducts\bin\Debug\BookingProducts.pdb
+C:\Users\bdeshpande\WebApiAssignment\BookingProducts\BookingProducts\obj\Debug\BookingProducts.csprojResolveAssemblyReference.cache
+C:\Users\bdeshpande\WebApiAssignment\BookingProducts\BookingProducts\obj\Debug\BookingProducts.csproj.CoreCompileInputs.cache
+C:\Users\bdeshpande\WebApiAssignment\BookingProducts\BookingProducts\obj\Debug\BookingProducts.exe
+C:\Users\bdeshpande\WebApiAssignment\BookingProducts\BookingProducts\obj\Debug\BookingProducts.pdb
